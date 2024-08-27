@@ -5,6 +5,7 @@ function App() {
   return (
     <main>
       <section className="bg-white">
+        {/* Hero Banner background section */}
         <div
           aria-hidden="true"
           className="relative isolate w-full overflow-hidden"
@@ -17,6 +18,7 @@ function App() {
             <div className="bg-black h-full w-full bg-opacity-30" />
           </div>
 
+          {/* Hero banner content */}
           <div className="mx-auto mt-4  pt-40 pb-28  md:pt-52 md:pb-48">
             <div className="text-center">
               <h1 className="text-6xl font-bold tracking-wide text-white">
