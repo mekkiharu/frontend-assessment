@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+Tech Stack
+---
+1. React + Vite with Vite React-TS Template
+2. Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Setup
+--- 
+* Please note that the template requires Node Version 20 or higher to work
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### To start:
+1. run `yarn install` in the command line
+2. run `yarn dev` and the `index.html` will be served on `http://localhost:5173`
 
-## Expanding the ESLint configuration
+Exercise 2
+---
+Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+##### Requirements
+1. Display data in tabs on desktop.
+2. Display data in an accordion on mobile.
+3. Only 1 accordion/tab should be open at a time.
+4. Open the first accordion/tab on load.
+5. If the open accordion is selected, close it.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+###### Bonus points
+* Improve the user experience with meaningful animations/transitions.
+* Design and styling.
+* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.

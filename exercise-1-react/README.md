@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+Tech Stack
+---
+1. React + Vite with Vite React-TS Template
+2. Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Setup
+--- 
+* Please note that the template requires Node Version 20 or higher to work
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### To start:
+1. run `yarn install` in the command line
+2. run `yarn dev` and the `index.html` will be served on `http://localhost:5173`
 
-## Expanding the ESLint configuration
+Exercise 1
+---
+Build a responsive page based on the designs.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+##### Requirements
+1. Match the designs exactly.
+2. Needs to be responsive.
 
-- Configure the top-level `parserOptions` property like this:
+##### Designs
+* exercise1-desktop.png
+* exercise1-mobile.png
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+##### Assets
+* Desktop banner - https://via.placeholder.com/1920x650
+* Mobile banner - https://via.placeholder.com/600x600
+* Content images - https://via.placeholder.com/400x300
