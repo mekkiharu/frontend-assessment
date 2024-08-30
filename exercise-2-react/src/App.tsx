@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <main className="container sm:mx-auto">
+    <main className="container sm:mx-auto h-100 mt-12 sm:self-center">
       <div className="flex flex-col w-full justify-center">
         <p className="text-4xl font-extrabold text-center">{title}</p>
         <p className="text-lg font-semibold text-center mt-1">
